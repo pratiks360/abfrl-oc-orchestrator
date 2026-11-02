@@ -50,7 +50,8 @@ Or build the included `Dockerfile`.
 
 ## 🔒 Security Notes
 
-- The upstream host and API key are hard-coded in `app/main.py` — move both to environment variables and rotate the key before reuse.
+- The catalog API key is read from the `CATALOG_API_KEY` environment variable.
+- A previously committed key was purged from history — rotate it if it was ever real.
 
 ## 🛠️ Tech Stack
 
